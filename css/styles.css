@@ -340,7 +340,11 @@ form button {
   opacity: 0;
   transition: all 0.4s ease-out;
 }
-
+.mfp-fade.mfp-wrap .mfp-content P{
+  font-size: 16px;
+  margin:16px;
+  color:#000;
+}
 .mfp-fade.mfp-wrap.mfp-ready .mfp-content {
   opacity: 1;
 }
