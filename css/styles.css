@@ -5,95 +5,82 @@
 @font-face{font-family:Lucas;src:url(/shared_res/agility/commons/fonts/NespressoLucas-Bold.woff) format("woff");font-style:normal;font-weight:700}
 @font-face{font-family:Lucas;src:url(/shared_res/agility/commons/fonts/NespressoLucas-XtraBd.woff) format("woff");font-style:normal;font-weight:800}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+#ocw-container h1,
+#ocw-container h2,
+#ocw-container h3,
+#ocw-container h4,
+#ocw-container h5,
+#ocw-container h6 {
   font-family: Lucas, Helvetica, sans-serif;
   font-weight: 700;
   color: #000;
   margin-top: 0;
-  line-height: 1.2em
+  line-height: 1.2em;
 }
-
-h1 {
-  font-size: 32px
+#ocw-container h1 {
+  font-size: 32px;
 }
-
-h2 {
-  font-size: 24px
+#ocw-container h2 {
+  font-size: 24px;
 }
-
-h3 {
-  font-size: 18.72px
+#ocw-container h3 {
+  font-size: 18.72px;
 }
-
-h4 {
-  font-size: 16px
+#ocw-container h4 {
+  font-size: 16px;
 }
-
-h5 {
-  font-size: 13.28px
+#ocw-container h5 {
+  font-size: 13.28px;
 }
-
-h6 {
-  font-size: 10.72px
+#ocw-container h6 {
+  font-size: 10.72px;
 }
-
-button,
-input,
-label,
-select,
-textarea {
+#ocw-container button,
+#ocw-container input,
+#ocw-container label,
+#ocw-container select,
+#ocw-container textarea {
   font-family: Lucas, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 17px;
-  line-height: 1.2em
+  line-height: 1.2em;
 }
-
-a,
-p,
-button,
-label,
-input {
-  font-family: 'Lucas', Helvetica, sans-serif;
+#ocw-container a,
+#ocw-container p,
+#ocw-container button,
+#ocw-container label,
+#ocw-container input {
+  font-family: "Lucas", Helvetica, sans-serif;
   font-weight: normal;
   font-size: 17px;
   line-height: 1.2em;
   color: #000;
 }
-
-p {
-  margin-bottom:0;
+#ocw-container p {
+  margin-bottom: 0;
 }
-
-.titulos {
+#ocw-container .titulos {
   color: #000;
   font-weight: 600;
   text-transform: uppercase;
   margin: 16px 0;
 }
-
-body {
+#ocw-container body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
-
-button,
-input[type=button],
-input[type=submit] {
+#ocw-container button,
+#ocw-container input[type=button],
+#ocw-container input[type=submit] {
   border: none;
   background: 0 0;
   cursor: pointer;
-  transition: .3s ease-in-out
+  transition: 0.3s ease-in-out;
 }
-
-button.btn,
-input[type=button].btn,
-input[type=submit].btn {
+#ocw-container button.btn,
+#ocw-container input[type=button].btn,
+#ocw-container input[type=submit].btn {
   border: 1px solid #475460;
   text-transform: uppercase;
   font-weight: 700;
@@ -101,31 +88,31 @@ input[type=submit].btn {
   background-color: #f1ece6;
   font-size: 20px;
   padding: 8px 28px;
-  margin:24px 0;
+  margin: 24px 0;
 }
-
-button.btn:hover,
-input[type=button].btn:hover,
-input[type=submit].btn:hover {
+#ocw-container button.btn:hover,
+#ocw-container input[type=button].btn:hover,
+#ocw-container input[type=submit].btn:hover {
   background-color: #000;
-  color: #fff
+  color: #fff;
 }
-
-form {
-  padding: 32px 16px 64px
+#ocw-container form {
+  padding: 32px 16px 64px;
 }
-
 form .campo {
   display: flex;
   flex-direction: column;
   min-height: 72px;
 }
+form .campo:first-of-type{ 
+  margin-bottom: 24px;
+}
 
 form .campo label {
-  color:rgb(39, 35, 31);
+  color:#6c6357;
   margin-bottom: 4px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 
@@ -143,6 +130,7 @@ form .campo select {
   font-weight: 600;
   background-clip: padding-box;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color:#2b2727;
 }
 
 form .campo select {
@@ -194,7 +182,7 @@ form button {
 
 
 #ocw-container {
-  background-color: #ededed;
+  background-color: #fff;
   position: relative;
   font-size: 16px;
   padding-bottom: 40px;;
@@ -242,7 +230,7 @@ form button {
 #ocw-container #contact .form .background {
   height: 243px;
   width: 100%;
-  background: #000 url('../img/backform.jpg') no-repeat center center;
+  background: #000 url('https://www.nespresso.com/ecom/medias/sys_master/public/13618039160862/backform.jpg?') no-repeat center center;
   background-size: cover
 }
 
@@ -284,14 +272,9 @@ form button {
     height:1280px;
   }
 
-  #ocw-container #contact .form .formulario {
-    display: flex;
-    align-items: center
-  }
 
   #ocw-container #contact .form .formulario form {
-    width: 100%;
-    padding: 0 40px
+    padding: 24px 40px
   }
 }
 
@@ -331,7 +314,6 @@ form button {
   transition: 1s all;
 }
 
-.mfp-bg {}
 
 .mfp-fade.mfp-bg {
   opacity: 0;
