@@ -269,12 +269,12 @@ form button {
   }
 
   #ocw-container #contact .form .background {
-    height:1280px;
+    height:1140px;
   }
 
 
   #ocw-container #contact .form .formulario form {
-    padding: 24px 40px
+    padding: 40px 40px 24px;
   }
 }
 
